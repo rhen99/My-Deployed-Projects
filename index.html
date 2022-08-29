@@ -14,6 +14,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="custom.css">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
@@ -23,99 +24,81 @@
     <title>Arhen Santiago | Deployed Projects</title>
   </head>
   <body>
-    <nav class="navbar bg-success navbar-dark navbar-expand-lg">
-      <div class="container">
-        <span class="navbar-brand mb-0 h1"
-          ><img
-            src="img/me.jpg"
-            class="rounded-circle"
-            alt="Arhen"
-            width="28"
-            height="28"
-          />
-          Arhen Santiago Projects</span
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" target="_blank" href="https://github.com/rhen99"
+    <div class="container">
+      <section id="introduction" class="py-5">
+        <div class="row">
+          <div class="col-md-3 text-center intro-left">
+            <img class="rounded-circle img-fluid" width="180" height="180" src="img/me.jpg" alt="me">
+            <h5>Follow Me</h5>
+            <a class="social-link" target="_blank" href="https://github.com/rhen99"
                 ><i class="bi bi-github"></i
               ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" target="_blank" href="https://twitter.com/lags_coding"
+              <a class="social-link" target="_blank" href="https://twitter.com/lags_coding"
                 ><i class="bi bi-twitter"></i
               ></a>
-            </li>
-          </ul>
+          </div>
+          <div class="col-md-9 text-center text-md-start">
+            <h3>Arhen Santiago</h3>
+            <h6>Self-Taught Developer</h6>
+            <p class=lead>I'm currently looking for a front-end remote position. I have almost five years of coding experience and I've been self-taught from the beginning. For that reason, I'm confident that I can learn anything that a job requires.</p>
+            <div>
+              <a href="resume.pdf" class="btn btn-success" download>Download My Resume</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="container mt-5">
+      </section>
+      <section id="projects">
         <div class="row">
-            <h3>My Projects</h1>
-        </div>
-        <div class="row mt-3">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="img/thumbnails/p1.PNG" class="card-img-top" alt="App Screenshot">
-                    <div class="card-body">
-                      <h5 class="card-title">Grid Marking Game</h5>
-                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Project Details</a>
-                    </div>
+          <h3>My Projects</h1>
+      </div>
+      <div class="row mt-3">
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <img src="img/thumbnails/p1.PNG" class="card-img-top" alt="App Screenshot">
+                  <div class="card-body">
+                    <h5 class="card-title">Grid Marking Game</h5>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Project Details</a>
                   </div>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Project Details</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                         <p class="lead">This project is based on one of my favorite flash games Blob Wars.</p>
-                         <p>It's a simple project built with ReactJs, HTML, and CSS. I also created a neighbor-finding algorithim which searches for the closest or the further empty tiles.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <a href="https://grid-marking-game.netlify.app/" target="_blank" class="btn btn-primary">View Project</a>
-                          <a href="https://github.com/rhen99/React-Marking-Game" target="_blank" class="btn btn-secondary">View Code</a>
-                        </div>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Project Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                       <p class="lead">This project is based on one of my favorite flash games Blob Wars.</p>
+                       <p>It's a simple project built with ReactJs, HTML, and CSS. I also created a neighbor-finding algorithim which searches for the closest or the further empty tiles.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="https://grid-marking-game.netlify.app/" target="_blank" class="btn btn-primary">View Project</a>
+                        <a href="https://github.com/rhen99/React-Marking-Game" target="_blank" class="btn btn-secondary">View Code</a>
                       </div>
                     </div>
                   </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Coming Soon</h5>
-                      <a href="#" class="btn btn-primary">Project Details</a>
-                    </div>
+                </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Coming Soon</h5>
+                    <a href="#" class="btn btn-primary">Project Details</a>
                   </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Coming Soon</h5>
-                      <a href="#" class="btn btn-primary">Project Details</a>
-                    </div>
+                </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Coming Soon</h5>
+                    <a href="#" class="btn btn-primary">Project Details</a>
                   </div>
-            </div>
-        </div>
+                </div>
+          </div>
+      </div>
+      </section>
     </div>
   </body>
 </html>
